@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies full task</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2 class="h2 text-center mt-3">Movies catolog</h2>
+    </div>
+  </header>
+  
+  <main>
+    <aside>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <form id="form">
+              <input id="search_input" class="form-control" type="text" placeholder="Search">
+              
+              <input id="rating" class="form-control mt-3" type="number" placeholder="Enter Rating">
+              
+              <select class="form-select mt-3" name="" id="">
+                <option value="all">All</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="horror">Horror</option>
+                <option value="comedy">Comedy</option>
+                <option value="dramma">Dramma</option>
+              </select>
+              
+              <select class="form-select mt-3" name="" id="">
+                <option value="rating-high">Rating (high to low)</option>
+                <option value="rating-low">Rating (low to high)</option>
+              </select>
+              
+              <button id="btn" type="submit" class="btn btn-primary w-100 mt-3">Search</button>
+            </form>
+            
+            <h3 class="h3 mt-4">Bookmarked movies</h3>
+            
+            <ul id="unosf" class="list-group pb-5">
+              <li class="list-group-item">
+                <p id="bookmarkds" class="fw-bold">Avegers: Infinity War</p>
+                <button type="button" class="btn btn-danger">Remove</button>
+              </li>
+              <li class="list-group-item">
+                <p id="bookmarkds" class="fw-bold">The Avengers</p>
+                
+                <button type="button" class="btn btn-danger">Remove</button>
+              </li>
+              <li class="list-group-item">
+                <p id="bookmarkds" class="fw-bold">12 Years a Slave</p>
+                <button type="button" class="btn btn-danger">Remove</button>
+              </li>
+            </ul>
+            
+          </div>
+          
+          <div class="col-md-8">
+            <h5 id="h5" class="h5">Search results: 20</h5>
+            <div class="alert alert-info" role="alert">
+              Use the form on the left to search for a movie
+            </div>
+            <div id="wrapper" class="wrapper d-flex flex-wrap"></div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel klonse">Movie title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="youngesrst" class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-primary">1</button>
+                <button type="button" class="btn btn-outline-primary" id="movie_two-page">2</button>
+                <button type="button" class="btn btn-outline-primary">3</button>
+                <button type="button" class="btn btn-outline-primary">4</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  
+  <script src="./js/movies.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+</html>
